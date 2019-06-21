@@ -50,19 +50,32 @@ address{
 }
 
 .bg-primary {
-    background-color: rgb(65, 5, 65)!important;
+    background-color: #2a1b3d!important;
 }
 
 .bg-secondary {
-    background-color:rgb(141, 41, 187)!important;
+    background-color:#44318d!important;
 }
 
-.bg-light {
-    background-color: rgb(255, 254, 191)!important;
+
+.flower_div {
+    position: fixed;
+	left: -225px;
+    top: -225px;
+    z-index: -2;	
 }
+
+#flower {
+    width: 500px;
+}
+.bg-light {
+    background-color: #1C3334!important;
+}
+
 
 .text-primary {
-    color:  #f5fdd6!important;
+    color:  #a4b3b8!important;
+    font-size: 1.5em;
 }
 
 .jumbotron {
@@ -87,9 +100,9 @@ color: rgb(183, 101, 199)!important;
     }
 
 .mybackground {
-    background-image: url("/pics/smoke.png");
+    background-image: url("/pics/darksmoke.png");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: center;
 }
 
 .app {
@@ -103,8 +116,16 @@ color: rgb(183, 101, 199)!important;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 700px;
+    min-height: 700px;
 }
 .ukr {
     display: none;
+}
+
+
+.change{
+	-ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+    transition-duration: 5s;
 }

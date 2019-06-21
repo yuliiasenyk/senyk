@@ -58,30 +58,92 @@
     </header>
 
 <div class="apps"> 
-        <div class="app app__to-do col-12 col-md-5 mx-auto bg-light">   <div class="card">
-                <h3 class="card-header bg-secondary text-white"> Facts at a Glance</h3>
+        <div class="app app__to-do col-12 col-md-5 mx-auto bg-dark">   <div class="card">
+                <h3 class="card-header bg-secondary text-white">To-Do list</h3>
                 <div class="card-body bg-light">
-                    <dl class="row">
-                        <dt class="col-6">Started </dt>
-                        <dd class="col-6">3 Feb.2013 </dd>
-                        <dt class="col-6">Major Stake Holder</dt>
-                        <dd class="col-6">HK Fine Foods Inc.</dd>
-                    </dl>
+                        <div class="container bg-primary">
+                                    <h1>TODO List</h1>     
+                                   <div class="new_task">
+                                    <form class="add_new">
+                                        <input type="text" placeholder="Add New Action" id="task">
+                                        <button onclick="addItem()" id="btn"><i class="material-icons">+</i></button>
+                                    </form>
+                                    <ul id="todos"></ul>
+                                </div>
+                                
+                                <footer> <img alt="paw" src="assets/img/cat.png"> </footer>
+                            </div>
                 </div>
             </div></div>
         <div class="app app__registration col-12 col-md-5 bg-light mx-auto">  <div class="card">
-                <h3 class="card-header bg-secondary text-white"> Facts at a Glance</h3>
-                <div class="card-body bg-light">
-                    <dl class="row">
-                        <dt class="col-6">Started </dt>
-                        <dd class="col-6">3 Feb.2013 </dd>
-                        <dt class="col-6">Major Stake Holder</dt>
-                        <dd class="col-6">HK Fine Foods Inc.</dd>
-                    </dl>
+                <h3 class="card-header bg-secondary text-white"> Registration form</h3>
+                <div class="card-body bg-dark">
+                            <div class="col-12">
+                                <h3>Send us your Feedback</h3>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="firstname" class="col-md-3 col-form-label"> First Name </label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter your name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lastname" class="col-md-3 col-form-label"> Last Name </label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter your surname">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="telnum" class="col-12 col-md-3 col-form-label"> Telephone</label>
+                                        <div class="col-3 col-md-3">
+                                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                                        </div>
+                                        <div class="col-9 col-md-6">
+                                            <input type="text" class="form-control" id="telnum" name="telnum" placeholder="Your number">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="emailid" class="col-12 col-md-3 col-form-label"> Email </label>
+                                        <div class="col-md-9">
+                                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Enter your email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-5 offset-md-3">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                                <label for="approve" class="form-check-label"> <strong>May we contact you?</strong> </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 offset-md-1">
+                                            <select class="form-control">
+                                                <option>Tel</option>
+                                                <option>Email</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="feedback" class="col-12 col-md-3 col-form-label"> Your Feedback </label>
+                                        <div class="col-md-9">
+                                            <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                <div class="offset-md-3 col-md-9">
+                    <button type="submit" class="btn btn-primary">Send feedback </button>
                 </div>
-            </div> </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md">
+                            </div>
+                        </div>
+                </div>
+            </div> 
         <div class="app app__booking col-12 col-md-5 mx-auto bg-light ">  <div class="card">
-                <h3 class="card-header bg-secondary text-white"> Facts at a Glance</h3>
+                <h3 class="card-header bg-secondary text-white"> Booking</h3>
                 <div class="card-body bg-light">
                     <dl class="row">
                         <dt class="col-6">Started </dt>
@@ -93,7 +155,7 @@
             </div> </div>
         <div class="app col-12 col-md-5 mx-auto bg-light self-align-center">
                 <div class="card">
-                    <h3 class="card-header bg-secondary text-white"> Facts at a Glance</h3>
+                    <h3 class="card-header bg-secondary text-white"> ---- </h3>
                     <div class="card-body bg-light">
                         <dl class="row">
                             <dt class="col-6">Started </dt>
@@ -156,6 +218,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="JS/main.js"></script>
+    <script src="JS/todo.js"></script>
 
 </body>
 
