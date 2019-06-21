@@ -1,18 +1,20 @@
-body {
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
+body {    padding: 65px 0px 0px 0px;
 }
-
-
-.navbar-dark {
-    background-color: violet;
-}
-
 .row-header {
-    margin: 0px auto;
-    padding: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
+body {
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+   }
+
+
+   .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
 .row-content {
     margin:0px auto;
     padding: 50px 0px 50px 0px;
@@ -29,7 +31,10 @@ body {
 .jumbotron {
     padding:30px;
     margin:0px auto;
-    background: #9575CD ;
+    background-image: url(‘pics/lightsmoke.png’);
+        background-size: cover;
+        background-repeat: no-repeat;
+
     color:floralwhite;
 }
 
@@ -38,12 +43,68 @@ address{
     margin:0px;
     color:#0f0f0f;
 }
-
+.modes {
+    position: fixed;
+	right: 35px;
+	top: 25px;	
+}
 
 .bg-primary {
     background-color: rgb(65, 5, 65)!important;
 }
 
-.bg-primary {
-    background-color: $color-primary!important;
+.bg-secondary {
+    background-color:rgb(141, 41, 187)!important;
+}
+
+.bg-light {
+    background-color: rgb(255, 254, 191)!important;
+}
+
+.text-primary {
+    color:  #f5fdd6!important;
+}
+
+.jumbotron {
+    padding:30px;
+    margin:0px auto;
+    background-image: url(‘pics/lightsmoke.png’);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    color:floralwhite;
+}
+
+#contact-button:hover {
+background-color: rgb(70, 20, 94)!important;
+font-weight: 150%!important;
+color: rgb(183, 101, 199)!important;
+}
+#contact-button:active {
+    background-color: rgb(161, 35, 145)!important;
+    font-weight: 150%!important;
+    color: rgb(183, 101, 199)!important;
+    }
+
+.mybackground {
+    background-image: url("/pics/smoke.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.app {
+    margin: 10px 0;
+    padding: 10px;
+    display:block;
+    border: yellow 1px solid;
+}
+.apps {
+    padding:5px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 700px;
+}
+.ukr {
+    display: none;
 }
