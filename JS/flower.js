@@ -1,7 +1,7 @@
  $(document).ready(function () {
     var timerinterval = 8,
         degperint = 1,
-        target = $('#flower'),
+        flower = $('#flower'),
         degrees = 0,
         active = false,
         firststart = false,
@@ -19,7 +19,7 @@
     }
     
     function setRotation(deg) {
-            target.css({
+            flower.css({
                 '-webkit-transform': 'rotate(' + deg + 'deg)',
                     '-moz-transform': 'rotate(' + deg + 'deg)',
                     '-ms-transform': 'rotate(' + deg + 'deg)',
@@ -27,7 +27,7 @@
             });       
     }
     
-    target.hover(function () {
+    flower.hover(function () {
         active = true;   
         if (firststart===false) { myintv = setInterval(rotatenow, timerinterval); }
         firststart = true; 

@@ -1,4 +1,14 @@
-body {    padding: 65px 0px 0px 0px;
+:root {
+    --dark-purple: #2a1b3d;
+    --middle-purple: rgba(68, 49, 141, 0.6);
+    --light-purple: rgba(174, 145, 199, 0.6);
+    --light-nav: #62519d;
+    --light-text-color: #a4b3b8;
+    --dark-text-color: rgba(22, 17, 27, 0.8);
+  }
+
+body {
+    padding: 65px 0px 0px 0px;
 }
 .row-header {
     margin-top: 10px;
@@ -6,13 +16,7 @@ body {    padding: 65px 0px 0px 0px;
     padding: 0px;
 }
 
-body {
-    background-image: url("paper.gif");
-    background-color: #cccccc;
-   }
-
-
-   .dropdown:hover>.dropdown-menu {
+.dropdown:hover>.dropdown-menu {
     display: block;
   }
 .row-content {
@@ -21,21 +25,18 @@ body {
     border-bottom: 1px ridge;
     min-height:400px;
 }
-
 .footer{
-    background-color: #D1C4E9;
+    background-color: var(--middle-purple);
     margin:0px auto;
     padding: 20px 0px 20px 0px;
 }
-
 .jumbotron {
+    background-color: var(--middle-purple);;
     padding:30px;
     margin:0px auto;
-    background-image: url(‘pics/lightsmoke.png’);
-        background-size: cover;
-        background-repeat: no-repeat;
-
-    color:floralwhite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--light-text-color);
 }
 
 address{
@@ -45,36 +46,38 @@ address{
 }
 .modes {
     position: fixed;
-	right: 35px;
-	top: 25px;	
+	right: 25px;
+	top: 20px;	
 }
 
 .bg-primary {
-    background-color: #2a1b3d!important;
+    background-color: var(--dark-purple)!important;
 }
 
 .bg-secondary {
-    background-color:#44318d!important;
+    background-color:var(--middle-purple)!important;
 }
 
+.nav-ligth {
+    background-color: var(--light-nav)!important;
+}
 
 .flower_div {
     position: fixed;
 	left: -225px;
     top: -225px;
-    z-index: -2;	
+    z-index: -1;	
 }
 
 #flower {
-    width: 500px;
+max-width: 500px;
 }
 .bg-light {
-    background-color: #1C3334!important;
+    background-color: var(--light-purple)!important;
 }
 
-
-.text-primary {
-    color:  #a4b3b8!important;
+.text-light {
+    color: var(--light-text-color)!important;
     font-size: 1.5em;
 }
 
@@ -82,20 +85,23 @@ address{
     padding:30px;
     margin:0px auto;
     background-image: url(‘pics/lightsmoke.png’);
-        background-size: cover;
-        background-repeat: no-repeat;
-
-    color:floralwhite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:var(--light-text-color:);
+}
+.nav-item:not(.active):hover {
+    background-color:rgba(58, 50, 71, 0.4);
 }
 
+.active {
+    background-color:rgba(76, 63, 95, 0.6);
+}
 #contact-button:hover {
-background-color: rgb(70, 20, 94)!important;
-font-weight: 150%!important;
-color: rgb(183, 101, 199)!important;
+background-color: rgba(55, 49, 58, 0.4)!important;
+color: rgba(195, 192, 199, 0.8)!important;
 }
 #contact-button:active {
     background-color: rgb(161, 35, 145)!important;
-    font-weight: 150%!important;
     color: rgb(183, 101, 199)!important;
     }
 
@@ -123,9 +129,4 @@ color: rgb(183, 101, 199)!important;
 }
 
 
-.change{
-	-ms-transform: rotate(360deg); /* IE 9 */
-    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
-    transform: rotate(360deg);
-    transition-duration: 5s;
-}
+

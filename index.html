@@ -11,21 +11,21 @@
 
 <body class="text-primary">
         <nav class="navbar navbar-dark navbar-expand-md bg-primary fixed-top">     <div class="container"> 
-               <div class="flower_div"><img id="flower" class="align-self-center" src="pics/flower2.png" alt="rotating flower"> </div> 
+               <div class="flower_div"><img id="flower" class="align-self-center img-responsive" src="pics/flower2.png" alt="rotating flower"> </div> 
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtarget"> <span class="navbar-toggler-icon"> </span></button>
                         <a class="navbar-brand mr-auto" href="#"> <img src="pics/darksmoke.png" height="60" width="51"></a>
                         <div class="collapse navbar-collapse" id="navtarget">
                             <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"> </span> <span class="eng"> Home</span> <span class="ukr"> Головна</span> </a></li>
-                                <li class="nav-item"><a class="nav-link" href="about.html"><span class="fa fa-info fa-lg"> </span><span class="eng"> About me</span> <span class="ukr"> Про мене</span> </a></li>
+                                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home "> </span> <span class="eng"> Home</span> <span class="ukr"> Головна</span> </a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html"><span class="fa fa-info"> </span><span class="eng"> About me</span> <span class="ukr"> Про мене</span> </a></li>
                                 <li class="nav-item"><a class="nav-link" href="different.html"><i class="fa fa-tasks"></i><span class="eng"> Different</span> <span class="ukr"> Різне</span>  </a></li>
-                                <li class="nav-item"><a class="nav-link" href="contacts.html"><span class="fa fa-address-card fa-lg"> </span> <span class="eng"> Contacts</span> <span class="ukr"> Контакти</span>  </a></li>
+                                <li class="nav-item"><a class="nav-link" href="contacts.html"><span class="fa fa-address-card"> </span> <span class="eng"> Contacts</span> <span class="ukr"> Контакти</span>  </a></li>
                             </ul>  
                         </div>                           <nav class="navbar navbar-expand-sm fixed-right"> 
                                 <ul class="navbar-nav modes">
-                                        <li class="nav-item active"><a class="nav-link" href="#"> <i class="fa fa-moon-o" aria-hidden="true"></i></a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-sun-o" aria-hidden="true"></i></a></li>
-                                        <li class="nav-item"><a id="lang" class="nav-link" href="#"><i class="fa fa-language" aria-hidden="true"></i></a></li>
+                                        <li class="nav-item active"><a class="nav-link" id="day" href="#"> <i class="fa fa-moon-o fa-lg" aria-hidden="true"></i></a></li>
+                                        <li class="nav-item"><a class="nav-link" id="night" href="#"><i class="fa fa-sun-o fa-lg" aria-hidden="true"></i></a></li>
+                                        <li class="nav-item"><a id="lang" class="nav-link" href="#"><i class="fa fa-language fa-lg" aria-hidden="true"></i></a></li>
                                     </ul> 
                                 </nav>   </div>  </nav>
  
@@ -38,6 +38,11 @@
                     <h1 class="ukr">Веб-розробка</h1>
                     <p class="eng">“Website without visitors is like a ship lost in the horizon.” 
                             ― Dr. Christopher Dayagdag</p>
+                            <div class="toggle-box">
+                                <input type="checkbox" name="checkbox1" id="toggle-box-checkbox" />
+                                <label for="toggle-box-checkbox" class="toggle-box-label-left">day</label>
+                                <label for="toggle-box-checkbox" class="toggle-box-label">night</label>
+                            </div>
                 <p class="ukr">“Вебсайт без відвідувачів неначе корабель, загублений на горизонті.” 
                                     ― Крістофер Деяград</p>
                 </div>
@@ -183,7 +188,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="JS/main.js"></script>
     <script src="JS/flower.js"></script>
-
+    <script src="JS/day-night.js"></script>
 
 </body>
 
