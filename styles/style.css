@@ -1,15 +1,34 @@
 :root {
     --dark-purple: #2a1b3d;
     --middle-purple: rgba(68, 49, 141, 0.6);
-    --light-purple: rgba(174, 145, 199, 0.6);
-    --light-nav: #62519d;
-    --light-text-color: #a4b3b8;
-    --dark-text-color: rgba(22, 17, 27, 0.8);
+    --light-purple: rgba(179, 156, 199, 0.8);
+    --light-nav: #6b57b4;
+    --light-text-color: #f8f8e3;
+    --dark-text-color: rgba(22, 17, 27, 0.9);
   }
 
 body {
     padding: 65px 0px 0px 0px;
+    margin: 40px;
+    background-image: linear-gradient(to bottom, var(--dark-purple) 30%, var(--middle-purple), var(--light-purple) 80%);
+    color: var(--light-text-color);
+    background-size: 100% 300%;
+    background-position: 100% 0%;
+    transition: all 1.5s;
+  }
+  body.day {
+    background-position: 100% 100%;
 }
+nav a:link, a:visited, a:hover {
+    text-decoration: none;
+    color: var(--light-text-color)
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+ 
+
 .row-header {
     margin-top: 10px;
     margin-bottom: 0px;
@@ -50,60 +69,64 @@ address{
 	top: 20px;	
 }
 
-.bg-primary {
+.bg-dark {
     background-color: var(--dark-purple)!important;
+    color: var(--light-text-color)!important;
+    font-size: 1.2em;
 }
-
 .bg-secondary {
     background-color:var(--middle-purple)!important;
+    color: var(--light-text-color)!important;
+    font-size: 1.2em;
 }
-
 .nav-ligth {
     background-color: var(--light-nav)!important;
 }
-
+.bg-light {
+    background-color: var(--light-purple)!important;
+}
+.dark-text {
+color: var(--dark-purple)!important;
+}
+.light-text {
+    color: var(--light-text-color)!important;
+}
 .flower_div {
     position: fixed;
 	left: -225px;
     top: -225px;
     z-index: -1;	
 }
-
 #flower {
 max-width: 500px;
-}
-.bg-light {
-    background-color: var(--light-purple)!important;
-}
-
-.text-light {
-    color: var(--light-text-color)!important;
-    font-size: 1.5em;
 }
 
 .jumbotron {
     padding:30px;
     margin:0px auto;
-    background-image: url(‘pics/lightsmoke.png’);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color:var(--light-text-color:);
+    color:var(--light-text-color);
 }
 .nav-item:not(.active):hover {
-    background-color:rgba(58, 50, 71, 0.4);
+    background-color:rgba(89, 63, 131, 0.3);
 }
-
 .active {
-    background-color:rgba(76, 63, 95, 0.6);
+    background-color:rgba(83, 49, 131, 0.5);
 }
+#contact-button {
+     color: var(--light-purple)!important;
+     background-color: var(--light-nav);
+    }
 #contact-button:hover {
-background-color: rgba(55, 49, 58, 0.4)!important;
+background-color: rgba(47, 29, 58, 0.6)!important;
 color: rgba(195, 192, 199, 0.8)!important;
 }
 #contact-button:active {
     background-color: rgb(161, 35, 145)!important;
     color: rgb(183, 101, 199)!important;
     }
+    #contact-button:visited {
+        background-color:  var(--dark-purple)!important;
+    } 
 
 .mybackground {
     background-image: url("/pics/darksmoke.png");

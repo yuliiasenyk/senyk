@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mode-toggle.css">
     <title>Home Page</title>
 </head>
 
-<body class="text-primary">
-        <nav class="navbar navbar-dark navbar-expand-md bg-primary fixed-top">     <div class="container"> 
+<body class="container">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">    
+             <div class="container"> 
                <div class="flower_div"><img id="flower" class="align-self-center img-responsive" src="pics/flower2.png" alt="rotating flower"> </div> 
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtarget"> <span class="navbar-toggler-icon"> </span></button>
-                        <a class="navbar-brand mr-auto" href="#"> <img src="pics/darksmoke.png" height="60" width="51"></a>
                         <div class="collapse navbar-collapse" id="navtarget">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home "> </span> <span class="eng"> Home</span> <span class="ukr"> Головна</span> </a></li>
@@ -23,13 +24,18 @@
                             </ul>  
                         </div>                           <nav class="navbar navbar-expand-sm fixed-right"> 
                                 <ul class="navbar-nav modes">
-                                        <li class="nav-item active"><a class="nav-link" id="day" href="#"> <i class="fa fa-moon-o fa-lg" aria-hidden="true"></i></a></li>
-                                        <li class="nav-item"><a class="nav-link" id="night" href="#"><i class="fa fa-sun-o fa-lg" aria-hidden="true"></i></a></li>
-                                        <li class="nav-item"><a id="lang" class="nav-link" href="#"><i class="fa fa-language fa-lg" aria-hidden="true"></i></a></li>
+                                        <li>
+                                        <div class="toggle-box">
+                                            <input type="checkbox" name="checkbox1" id="toggle-box-checkbox" />
+                                            <label for="toggle-box-checkbox" class="toggle-box-label-left"><i class="fa fa-sun-o fa-lg" aria-hidden="true"></i></label>
+                                            <label for="toggle-box-checkbox" class="toggle-box-label"><i class="fa fa-moon-o fa-lg" aria-hidden="true"></i></label>
+                                        </div>  </li>
+                                        <li class="nav-item"><a id="lang" class="nav-link" href="#"><i class="fa fa-language" aria-hidden="true"></i></a></li>
+
                                     </ul> 
                                 </nav>   </div>  </nav>
  
-<div class="mybackground bg-primary">
+<div class="mybackground">
     <header class="jumbotron bg-secondary">
         <div class="container">
             <div class="row row-header">
@@ -38,11 +44,6 @@
                     <h1 class="ukr">Веб-розробка</h1>
                     <p class="eng">“Website without visitors is like a ship lost in the horizon.” 
                             ― Dr. Christopher Dayagdag</p>
-                            <div class="toggle-box">
-                                <input type="checkbox" name="checkbox1" id="toggle-box-checkbox" />
-                                <label for="toggle-box-checkbox" class="toggle-box-label-left">day</label>
-                                <label for="toggle-box-checkbox" class="toggle-box-label">night</label>
-                            </div>
                 <p class="ukr">“Вебсайт без відвідувачів неначе корабель, загублений на горизонті.” 
                                     ― Крістофер Деяград</p>
                 </div>
@@ -56,7 +57,7 @@
 
 
     
-    <div class="container">
+    <div class="container light-text">
         <div class="row">
             <div>
                 <h3>About Us</h3>
@@ -186,6 +187,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="JS/main.js"></script>
     <script src="JS/flower.js"></script>
     <script src="JS/day-night.js"></script>

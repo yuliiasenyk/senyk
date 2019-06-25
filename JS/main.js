@@ -6,15 +6,17 @@ $("#lang").click(function(){
  $('#toggle-box-checkbox').on('change', function(){
     if(this.checked){
       $('body').addClass('day');
-      $('.navbar-dark').addClass('nav-ligth');
-      $('#contact-button').removeClass('bg-primary')
-      $('#contact-button').addClass('bg-light');
-
+      $('.navbar-dark').toggleClass('nav-ligth');
+      $('.light-text').toggleClass('light-text').toggleClass('dark-text');
     }else{
       $('body').removeClass('day');
-      $('.navbar-dark').removeClass('nav-ligth');
-      $('#contact-button').removeClass('bg-light')
-      $('#contact-button').addClass('bg-primary')
-
+      $('.navbar-dark').toggleClass('nav-ligth');
+      $('.dark-text').toggleClass('light-text').toggleClass('dark-text');
     }
   });
+
+
+  localStorage.setItem('myKey', 'myValue');
+  if ($('#toggle-box-checkbox.checked') = true) {
+    localStorage.myKey = true;
+  }

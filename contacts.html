@@ -6,24 +6,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/nightday.css">
+    <link rel="stylesheet" href="styles/mode-toggle.css">
 
-    <title>Home Page</title>
+    <title>Contacts</title>
 </head>
 
-<body class="text-light">
-        <nav class="navbar navbar-dark navbar-expand-md bg-primary fixed-top">     <div class="container"> 
+<body class="container">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">     
+            <div class="container"> 
                <div class="flower_div"><img id="flower" class="align-self-center" src="pics/flower2.png" alt="rotating flower"> </div> 
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtarget"> <span class="navbar-toggler-icon"> </span></button>
-                        <a class="navbar-brand mr-auto" href="#"> <img src="pics/darksmoke.png" height="60" width="51"></a>
                         <div class="collapse navbar-collapse" id="navtarget">
                             <ul class="navbar-nav mr-auto">
-                                <li class="nav-item "><a class="nav-link" href="#"><span class="fa fa-home fa-lg"> </span> <span class="eng"> Home</span> <span class="ukr"> Головна</span> </a></li>
+                                <li class="nav-item "><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"> </span> <span class="eng"> Home</span> <span class="ukr"> Головна</span> </a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.html"><span class="fa fa-info fa-lg"> </span><span class="eng"> About me</span> <span class="ukr"> Про мене</span> </a></li>
-                                <li class="nav-item"><a class="nav-link" href="different.html"><i class="fa fa-tasks"></i><span class="eng"> Different</span> <span class="ukr"> Різне</span>  </a></li>
-                                <li class="nav-item active"><a class="nav-link" href="contacts.html"><span class="fa fa-address-card fa-lg"> </span> <span class="eng"> Contacts</span> <span class="ukr"> Контакти</span>  </a></li>
-                            </ul>  
-                        </div>                           <nav class="navbar navbar-expand-sm fixed-right"> 
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="different.html"><i class="fa fa-tasks"></i> <span class="eng"> Different</span> <span class="ukr"> Різне</span> <span class="caret"></span></a>
+                                    <ul class="dropdown-menu nav-light navbar-nav ">
+                                            <li class="nav-item"><a class="nav-link" href="/different/todo.html"><span class="eng"> To-Do List</span> <span class="ukr"> Список справ</span></a></li>
+                                            <li class="nav-item"><a class="nav-link" href="/different/reg.html">Reg form</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="/different/booking.html">Booking</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="/different/product.html">Fourth</a></li>
+                                          </ul>   </li>                               
+                                           <li class="nav-item active"><a class="nav-link" href="contacts.html"><span class="fa fa-address-card fa-lg"> </span> <span class="eng"> Contacts</span> <span class="ukr"> Контакти</span>  </a></li>
+                            </ul>   </div>                           
+                            <nav class="navbar navbar-expand-sm fixed-right"> 
                                 <ul class="navbar-nav modes">
                                         <li>
                                         <div class="toggle-box">
@@ -31,9 +37,7 @@
                                             <label for="toggle-box-checkbox" class="toggle-box-label-left"><i class="fa fa-sun-o fa-lg" aria-hidden="true"></i></label>
                                             <label for="toggle-box-checkbox" class="toggle-box-label"><i class="fa fa-moon-o fa-lg" aria-hidden="true"></i></label>
                                         </div>  </li>
-                                        <li class="nav-item"><a id="lang" class="nav-link" href="#"><i class="fa fa-language" aria-hidden="true"></i></a></li>
-
-                                    </ul> 
+                                        <li class="nav-item"><a id="lang" class="nav-link" href="#"><i class="fa fa-language fa-lg" aria-hidden="true"></i></a></li>   </ul> 
                                 </nav>   </div>  </nav>
  
 <div class="mybackground ">
@@ -49,7 +53,7 @@
                                     ― Крістофер Деяград</p>
                 </div>
                         <div class="col-sm-2 align-self-center">
-                    <a href="#reservation-form" role="button" id="contact-button" class="contact-button text-light btn btn-lg  bg-primary"> Contact me </a> </div>       
+                    <a href="#reservation-form" role="button" id="contact-button" class="contact-button light-text btn btn-lg bg-secondary"> Contact me </a> </div>       
                     
             </div>
         </div>
@@ -58,7 +62,7 @@
 
 
     
-    <div class="container">
+    <div class="container light-text">
         <div class="row">
             <div>
                 <h3>About Us</h3>
@@ -71,18 +75,16 @@
             <p class="col-6 col-sm-6">Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
             <p class="col-6 col-sm-5">The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
         </div>
-
-
-        
+ 
 
 
         <div class="row row-content">
                 <div class="col-12">
                     <h3>Location Information</h3>
                 </div>
-                <div class="col-12 col-sm-4 offset-sm-1">
+                <div class="col-12 col-sm-4 offset-sm-1 light-text">
                     <h5>Our Address</h5>
-                    <address style="font-size: 100%">
+                    <address class="light-text">
                         121, Clear Water Bay Road<br>
                         Clear Water Bay, Kowloon<br>
                         HONG KONG<br>
@@ -91,7 +93,7 @@
                         <div id="like_button_container"> kjkjk</div>
 
                         <i class="fa fa-envelope"></i>:
-                        <a href="mailto:confusion@food.net">sunuk@.net</a>
+                        <a href="mailto:confusion@food.net">senuk04@gmail.com</a>
                     </address>
                 </div>
                 <div class="col-12 col-sm-6 offset-sm-1">
@@ -124,9 +126,9 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-7 col-sm-5">
+                <div class="col-7 col-sm-5 ">
                     <h5>Our Address</h5>
-                    <address>
+                    <address class="light-text">
                         121, Clear Water Bay Road<br>
                         Clear Water Bay, Kowloon<br>
                         HONG KONG<br>

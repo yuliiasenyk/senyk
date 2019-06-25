@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yuliiasenyk/senyk/issues"
   },
-  "homepage": "https://github.com/yuliiasenyk/senyk#readme"
+  "homepage": "https://github.com/yuliiasenyk/senyk#readme",
+  "dependencies": {
+    "local-storage": "^2.0.0"
+  }
 }
