@@ -7,7 +7,9 @@
     --dark-text-color: rgba(22, 17, 27, 0.9);
   }
 
+  
 body {
+    font-family: 'Pangolin', cursive;
     padding: 65px 0px 0px 0px;
     margin: 40px;
     background-image: linear-gradient(to bottom, var(--dark-purple) 30%, var(--middle-purple), var(--light-purple) 80%);
@@ -19,9 +21,11 @@ body {
   body.day {
     background-position: 100% 100%;
 }
-nav a:link, a:visited, a:hover {
+nav a:link, a:visited, a:hover, a:link, a:visited, a:hover{
     text-decoration: none;
-    color: var(--light-text-color)
+    color: var(--light-text-color);
+    font-size: 1.4em;
+    font-weight: 600;
   }
 
   a:hover {
@@ -50,6 +54,8 @@ nav a:link, a:visited, a:hover {
     padding: 20px 0px 20px 0px;
 }
 .jumbotron {
+    font-family: 'Neucha', cursive;
+    font-size: 1.3em;
     background-color: var(--middle-purple);;
     padding:30px;
     margin:0px auto;
@@ -66,7 +72,7 @@ address{
 .modes {
     position: fixed;
 	right: 25px;
-	top: 20px;	
+    top: 20px;	
 }
 
 .bg-dark {
@@ -79,7 +85,7 @@ address{
     color: var(--light-text-color)!important;
     font-size: 1.2em;
 }
-.nav-ligth {
+.bg-secondary2 {
     background-color: var(--light-nav)!important;
 }
 .bg-light {
@@ -91,6 +97,10 @@ color: var(--dark-purple)!important;
 .light-text {
     color: var(--light-text-color)!important;
 }
+.light-text-permanent {
+    color: var(--light-text-color)!important;
+    font-size: 16px;
+}
 .flower_div {
     position: fixed;
 	left: -225px;
@@ -99,6 +109,7 @@ color: var(--dark-purple)!important;
 }
 #flower {
 max-width: 500px;
+opacity: 0.5;
 }
 
 .jumbotron {
@@ -113,8 +124,9 @@ max-width: 500px;
     background-color:rgba(83, 49, 131, 0.5);
 }
 #contact-button {
+    margin-right: 10px;
      color: var(--light-purple)!important;
-     background-color: var(--light-nav);
+     font-size: 1.1em;
     }
 #contact-button:hover {
 background-color: rgba(47, 29, 58, 0.6)!important;
@@ -125,14 +137,21 @@ color: rgba(195, 192, 199, 0.8)!important;
     color: rgb(183, 101, 199)!important;
     }
     #contact-button:visited {
-        background-color:  var(--dark-purple)!important;
+        background-color:  var(--light-nav)!important;
     } 
 
 .mybackground {
-    background-image: url("/pics/darksmoke.png");
+    background-image: url("/pics/smokedark.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
+    background-size: 100% 100%;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 900;
+
 }
+
+
 
 .app {
     margin: 10px 0;
@@ -151,5 +170,37 @@ color: rgba(195, 192, 199, 0.8)!important;
     display: none;
 }
 
+#contact-form {
+    margin: 15px 0;
+}
+.card-header {
+    margin-top: 5px;
+}
+@media screen and (max-width: 780px) {
+    #flower {
+        max-width: 300px;
+        }
+        .flower_div {
+            left: -165px;
+            top: -105px;
+        }
+  }
 
+  @media screen and (max-width: 500px) {
+    #flower {
+        max-width: 200px;
+        }
+        
+        .flower_div {
+            left: -100px;
+            top: -100px;
+        }
 
+        .secret {
+            display: none;
+        }
+  }
+
+  .skill-description {
+      display: none;
+  }

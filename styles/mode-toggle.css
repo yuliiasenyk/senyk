@@ -38,7 +38,7 @@
   font-size: 18px;
   line-height: 16px;
   cursor: pointer;
-  color: rgba(184, 163, 163, 0.51);
+  color: var(--light-text-color);
   font-weight: normal;
 }
 .toggle-box-label-left:before {
